@@ -1,35 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade — PRAGMA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .policy-page { padding: 160px 0 100px; }
-    .policy-page h1 { font-family: var(--font-serif); font-size: 3rem; font-weight: 300; color: var(--white); margin-bottom: 16px; }
-    .policy-page .meta { font-size: 0.8rem; color: var(--gray-mid); letter-spacing: 0.08em; margin-bottom: 56px; }
-    .policy-page h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; color: var(--gold-light); margin: 40px 0 16px; }
-    .policy-page p { color: var(--gray-mid); line-height: 1.8; margin-bottom: 16px; font-size: 0.95rem; max-width: 720px; }
-    .policy-page ul { list-style: disc; padding-left: 24px; color: var(--gray-mid); line-height: 1.8; margin-bottom: 16px; max-width: 720px; }
-    .policy-page ul li { margin-bottom: 8px; font-size: 0.95rem; }
-    .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--gold); letter-spacing: 0.06em; margin-bottom: 48px; transition: gap 0.2s; }
-    .back-link:hover { gap: 14px; }
-  </style>
-</head>
-<body>
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Política de Privacidade — PRAGMA',
+  description: 'Política de Privacidade da PRAGMA Consultoria Linguística.',
+})
+</script>
+
+<template>
   <header class="nav-wrapper scrolled" id="navbar">
     <nav class="nav-inner">
-      <a href="index.html" class="nav-logo">PRAGMA</a>
+      <NuxtLink to="/" class="nav-logo">PRAGMA</NuxtLink>
     </nav>
   </header>
 
   <main class="policy-page">
     <div class="container">
-      <a href="index.html" class="back-link">← Voltar ao site</a>
+      <NuxtLink to="/" class="back-link">← Voltar ao site</NuxtLink>
       <h1>Política de Privacidade</h1>
       <p class="meta">Última atualização: março de 2026</p>
 
@@ -65,7 +50,7 @@
       </ul>
 
       <h2>5. Contato</h2>
-      <p>Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato: <strong style="color: var(--gold);">contato@pragma.com.br</strong></p>
+      <p>Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato: <strong style="color: var(--gold);">pragmaco.consultoria@gmail.com</strong></p>
     </div>
   </main>
 
@@ -76,5 +61,4 @@
       </div>
     </div>
   </footer>
-</body>
-</html>
+</template>

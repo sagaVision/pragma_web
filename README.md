@@ -2,6 +2,15 @@
 
 Site de marketing institucional da PRAGMA, consultoria linguística premium que transforma conhecimento em comunicação real para profissionais do cenário global.
 
+## Stack atual
+
+- Nuxt 3 com geração estática para Netlify.
+- Gerenciador de pacotes: `pnpm`.
+- Comando de build: `pnpm generate`.
+- Diretório publicado no Netlify: `.output/public`.
+- Rotas principais: `/`, `/privacidade`, `/produtos` e `/produtos/:slug`.
+- Produtos e links de checkout Hotmart ficam em `data/products.ts`.
+
 ---
 
 ## 🎯 Objetivo do Site
@@ -44,14 +53,12 @@ Converter visitantes em leads qualificados através de:
 
 ```
 /
-├── index.html              → Página principal
-├── privacidade.html        → Política de Privacidade (LGPD)
-├── termos.html             → (a criar) Termos de Uso
-├── css/
-│   └── style.css           → Estilos completos (tokens, componentes, responsivo)
-├── js/
-│   └── main.js             → JavaScript (interatividade, animações)
-└── README.md
+├── pages/                  → Rotas Nuxt (`/`, `/privacidade`, `/produtos`)
+├── data/products.ts        → Catálogo estático e links de checkout Hotmart
+├── plugins/                → Interações client-side migradas para Nuxt
+├── css/style.css           → Estilos globais, tokens e responsivo
+├── public/_redirects       → Redirects Netlify para URLs antigas
+└── netlify.toml            → Build estático para Netlify
 ```
 
 ---
@@ -74,7 +81,7 @@ Converter visitantes em leads qualificados através de:
 
 | Rota | Descrição |
 |------|-----------|
-| `/` ou `/index.html` | Página principal |
+| `/` | Página principal |
 | `/#hero` | Seção Hero |
 | `/#dor` | Seção de identificação |
 | `/#solucoes` | Soluções PRAGMA |
@@ -82,34 +89,34 @@ Converter visitantes em leads qualificados através de:
 | `/#transformacao` | Antes e Depois |
 | `/#depoimentos` | Prova Social |
 | `/#contato` | CTA final + contato |
-| `/privacidade.html` | Política de Privacidade |
+| `/privacidade` | Política de Privacidade |
 
 ---
 
 ## 🔧 Configurações Necessárias (Personalização)
 
 ### WhatsApp
-Substitua `5500000000000` pelo número real da PRAGMA em todos os links:
+Número atual usado nos CTAs:
 ```
-https://wa.me/5500000000000
+https://wa.me/55041998023799
 ```
 
 ### Instagram
-Substitua `@pragma.linguistica` pelo @ real:
+Perfil atual:
 ```
-https://instagram.com/pragma.linguistica
+https://instagram.com/cacaupragma
 ```
 
 ### E-mail
-Substitua `contato@pragma.com.br` pelo e-mail real.
+E-mail atual: `pragmaco.consultoria@gmail.com`.
 
 ---
 
 ## 🚀 Próximos Passos Sugeridos
 
 1. **Formulário de Lead Capture** — Integrar formulário com API (ex: EmailJS, Formspree) para capturar leads diretamente do site
-2. **Página de Programas** — Página dedicada ao PRAGMA Fluency Path com mais detalhes e preços
-3. **Termos de Uso** — Criar `termos.html`
+2. **Checkout Hotmart** — Substituir placeholders `SEU_CHECKOUT_*` em `data/products.ts`
+3. **Termos de Uso** — Criar rota Nuxt para termos
 4. **Google Analytics / Meta Pixel** — Adicionar rastreamento de conversões
 5. **Blog / Conteúdo** — Seção de artigos sobre comunicação e idiomas
 6. **Depoimentos em Vídeo** — Substituir depoimentos textuais por vídeos

@@ -1,0 +1,494 @@
+<script setup lang="ts">
+import { products } from '../data/products'
+
+useSeoMeta({
+  title: 'PRAGMA — Consultoria Linguística Premium',
+  description: 'A PRAGMA transforma conhecimento em comunicação real para profissionais que querem se posicionar com confiança no cenário global.',
+  ogTitle: 'PRAGMA — Consultoria Linguística Premium',
+  ogDescription: 'Consultoria linguística premium para destravar sua comunicação em inglês e espanhol.',
+})
+</script>
+
+<template>
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-logo">PRAGMA</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#transformacao">Transformação</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato" class="nav-cta">Falar com a PRAGMA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="container hero-content">
+        <div class="hero-tag reveal">Consultoria Linguística Premium</div>
+        <h1 class="hero-headline reveal">
+          Você já sabe inglês.<br />
+          <em>Mas ainda trava quando precisa falar.</em>
+        </h1>
+        <p class="hero-sub reveal">
+          A PRAGMA transforma conhecimento em comunicação real — para
+          profissionais que querem se posicionar com confiança no cenário
+          global.
+        </p>
+        <div class="hero-ctas reveal">
+          <a
+            href="https://wa.me/55041998023799?text=Quero%20destravar%20meu%20ingl%C3%AAs"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            Quero destravar meu inglês
+          </a>
+          <a href="#contato" class="btn btn-secondary">Agendar conversa</a>
+        </div>
+        <div class="hero-scroll reveal">
+          <span>role para baixo</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pain-section" id="dor">
+      <div class="container">
+        <div class="pain-grid">
+          <div class="pain-text reveal">
+            <p class="section-label">Você se reconhece aqui?</p>
+            <h2 class="section-title">
+              O conhecimento está lá.<br />
+              <em>A fala, não.</em>
+            </h2>
+            <p class="pain-intro">
+              Você estudou, fez cursos, assistiu séries. Lê e-mails em inglês,
+              entende tudo. Mas na hora de falar — em uma reunião, numa
+              viagem, numa entrevista — algo trava.
+            </p>
+          </div>
+          <div class="pain-cards reveal">
+            <div class="pain-card">
+              <div class="pain-icon"><i class="fas fa-comment-slash"></i></div>
+              <p>Você trava na hora de falar, mesmo sabendo a resposta.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon"><i class="fas fa-eye-slash"></i></div>
+              <p>Sente vergonha do sotaque ou de errar na frente dos outros.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon"><i class="fas fa-users"></i></div>
+              <p>Evita reuniões em inglês ou deixa outros falarem por você.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon"><i class="fas fa-brain"></i></div>
+              <p>Traduz mentalmente antes de falar — e perde o fio da conversa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pain-conclusion reveal">
+          <div class="pain-divider"></div>
+          <blockquote class="pain-quote">
+            "O problema nunca foi falta de conhecimento.<br />
+            <strong>Foi falta de método.</strong>"
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions-section" id="solucoes">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Soluções PRAGMA</p>
+          <h2 class="section-title">
+            Três caminhos.<br /><em>Um propósito.</em>
+          </h2>
+          <p class="section-desc">
+            Cada jornada é desenhada para um contexto real. Porque
+            comunicar-se bem não é genérico — é específico, intencional e
+            transformador.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-card reveal">
+            <div class="solution-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="solution-num">01</div>
+            <h3 class="solution-title">Inglês para Carreira</h3>
+            <p class="solution-desc">
+              Para profissionais que precisam comunicar autoridade em reuniões,
+              entrevistas e ambientes corporativos internacionais.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check"></i> Reuniões e apresentações em inglês</li>
+              <li><i class="fas fa-check"></i> Entrevistas e negociações</li>
+              <li><i class="fas fa-check"></i> Posicionamento e presença executiva</li>
+            </ul>
+            <a
+              href="https://wa.me/55041998023799?text=Quero%20saber%20mais%20sobre%20Ingl%C3%AAs%20para%20Carreira"
+              target="_blank"
+              rel="noopener"
+              class="solution-link"
+            >
+              Saiba mais <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="solution-card solution-card--featured reveal">
+            <div class="solution-badge">Mais completo</div>
+            <div class="solution-icon"><i class="fas fa-route"></i></div>
+            <div class="solution-num">02</div>
+            <h3 class="solution-title">PRAGMA Fluency Path</h3>
+            <p class="solution-desc">
+              Método estruturado e personalizado para destravar a fala,
+              construir confiança real e desenvolver fluência com propósito.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check"></i> Aprendizado por chunks linguísticos</li>
+              <li><i class="fas fa-check"></i> Foco em fala desde o primeiro dia</li>
+              <li><i class="fas fa-check"></i> Sessões de mentoria individuais</li>
+            </ul>
+            <a
+              href="https://wa.me/55041998023799?text=Quero%20conhecer%20o%20PRAGMA%20Fluency%20Path"
+              target="_blank"
+              rel="noopener"
+              class="solution-link"
+            >
+              Conhecer o programa <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="solution-card reveal">
+            <div class="solution-icon"><i class="fas fa-globe-americas"></i></div>
+            <div class="solution-num">03</div>
+            <h3 class="solution-title">Espanhol para a Vida</h3>
+            <p class="solution-desc">
+              Para quem quer viver o espanhol de verdade — em viagens, conexões
+              culturais e experiências ao redor do mundo.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check"></i> Conversação natural e fluida</li>
+              <li><i class="fas fa-check"></i> Conexão cultural profunda</li>
+              <li><i class="fas fa-check"></i> Autonomia total em viagens</li>
+            </ul>
+            <a
+              href="https://wa.me/55041998023799?text=Quero%20saber%20mais%20sobre%20Espanhol%20para%20a%20Vida"
+              target="_blank"
+              rel="noopener"
+              class="solution-link"
+            >
+              Saiba mais <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="metodo">
+      <div class="container">
+        <div class="method-grid">
+          <div class="method-text">
+            <p class="section-label reveal">O Método PRAGMA</p>
+            <h2 class="section-title reveal">
+              Não é aula.<br />
+              <em>É reconstrução.</em>
+            </h2>
+            <p class="method-intro reveal">
+              A maioria das pessoas não trava por falta de vocabulário. Trava
+              porque nunca aprendeu a <strong>pensar na língua</strong>. O
+              método PRAGMA resolve isso.
+            </p>
+
+            <div class="method-steps">
+              <div class="method-step reveal">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Chunks de Linguagem</h4>
+                  <p>Em vez de regras gramaticais isoladas, você aprende blocos de linguagem real — como nativos falam, pensam e se expressam.</p>
+                </div>
+              </div>
+              <div class="method-step reveal">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Fala desde o Primeiro Dia</h4>
+                  <p>Nada de "quando estiver pronto". Você fala desde a primeira sessão — porque é falando que se aprende a falar.</p>
+                </div>
+              </div>
+              <div class="method-step reveal">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Confiança como Resultado</h4>
+                  <p>Confiança não vem de saber mais — vem de ter falado em contextos reais e sobrevivido. Estruturamos isso para você.</p>
+                </div>
+              </div>
+              <div class="method-step reveal">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h4>Aplicação Contextual Real</h4>
+                  <p>Cada sessão é desenhada para o seu contexto: sua profissão, seus objetivos, suas situações reais de comunicação.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="method-visual reveal">
+            <div class="method-mock">
+              <div class="mock-header">
+                <div class="mock-dots"><span></span><span></span><span></span></div>
+                <span class="mock-title">Jornada do Aluno PRAGMA</span>
+              </div>
+              <div class="mock-body">
+                <div class="journey-step active">
+                  <div class="journey-icon"><i class="fas fa-map-signs"></i></div>
+                  <div class="journey-info">
+                    <span class="journey-phase">Fase 1</span>
+                    <span class="journey-name">Diagnóstico Profundo</span>
+                  </div>
+                  <div class="journey-status done"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step active">
+                  <div class="journey-icon"><i class="fas fa-layer-group"></i></div>
+                  <div class="journey-info">
+                    <span class="journey-phase">Fase 2</span>
+                    <span class="journey-name">Construção por Chunks</span>
+                  </div>
+                  <div class="journey-status done"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step current">
+                  <div class="journey-icon"><i class="fas fa-microphone"></i></div>
+                  <div class="journey-info">
+                    <span class="journey-phase">Fase 3</span>
+                    <span class="journey-name">Ativação da Fala</span>
+                  </div>
+                  <div class="journey-status current-badge">Agora</div>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step">
+                  <div class="journey-icon"><i class="fas fa-star"></i></div>
+                  <div class="journey-info">
+                    <span class="journey-phase">Fase 4</span>
+                    <span class="journey-name">Fluência com Confiança</span>
+                  </div>
+                  <div class="journey-status upcoming"><i class="fas fa-lock-open"></i></div>
+                </div>
+                <div class="mock-progress">
+                  <span>Progresso</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%"></div>
+                  </div>
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="transformation-section" id="transformacao">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">A Transformação PRAGMA</p>
+          <h2 class="section-title">O antes e o depois<br /><em>são mundos diferentes.</em></h2>
+        </div>
+
+        <div class="transformation-grid">
+          <div class="transformation-card before reveal">
+            <div class="trans-label"><span class="trans-dot"></span>Antes</div>
+            <ul class="trans-list">
+              <li><i class="fas fa-times-circle"></i><span>Traduz mentalmente antes de falar — e perde o raciocínio no caminho</span></li>
+              <li><i class="fas fa-times-circle"></i><span>Evita situações em inglês ou espanhol por medo de errar</span></li>
+              <li><i class="fas fa-times-circle"></i><span>Sente vergonha e insegurança constante ao comunicar</span></li>
+              <li><i class="fas fa-times-circle"></i><span>Deixa outros falarem por você nas reuniões importantes</span></li>
+              <li><i class="fas fa-times-circle"></i><span>Tem muito conhecimento, mas não consegue acessá-lo na hora H</span></li>
+            </ul>
+          </div>
+
+          <div class="transformation-divider reveal">
+            <div class="divider-line"></div>
+            <div class="divider-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="divider-line"></div>
+          </div>
+
+          <div class="transformation-card after reveal">
+            <div class="trans-label"><span class="trans-dot"></span>Depois</div>
+            <ul class="trans-list">
+              <li><i class="fas fa-check-circle"></i><span>Pensa direto na língua — sem filtro mental, sem demora</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Se comunica com naturalidade em qualquer situação</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Projeta segurança e autoridade ao falar</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Toma a palavra nas reuniões e se posiciona com clareza</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Usa o conhecimento que sempre teve — agora com fluidez real</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="depoimentos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Prova Social</p>
+          <h2 class="section-title">Vozes de quem<br /><em>já desbloqueou.</em></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Eu sabia inglês, mas não falava. Estudei anos e na hora H travava. Depois da PRAGMA, entro em reuniões com segurança que nunca tive antes."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><span>AM</span></div>
+              <div class="author-info"><strong>Ana M.</strong><span>Gerente de Projetos, São Paulo</span></div>
+            </div>
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured reveal">
+            <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Viajei pela América Latina e me comuniquei sem travar — fiz amizades, negociei, me virei sozinha. O espanhol que aprendi com a PRAGMA é diferente de tudo que já estudei."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><span>RC</span></div>
+              <div class="author-info"><strong>Renata C.</strong><span>Empresária, Rio de Janeiro</span></div>
+            </div>
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Ganhei uma confiança que nunca tive. Hoje me comunico em inglês sem pensar — o método deles muda como você processa a língua, não só como você a estuda."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><span>LF</span></div>
+              <div class="author-info"><strong>Lucas F.</strong><span>Engenheiro de Software, Curitiba</span></div>
+            </div>
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Produtos PRAGMA</p>
+          <h2 class="section-title">Escolha sua próxima<br /><em>jornada de comunicação.</em></h2>
+          <p class="section-desc">Programas estáticos com compra externa via Hotmart. A página de cada produto apresenta os detalhes antes do checkout.</p>
+        </div>
+        <div class="products-grid">
+          <article v-for="product in products" :key="product.slug" class="product-card reveal">
+            <div class="product-icon"><i :class="product.icon"></i></div>
+            <p class="product-eyebrow">{{ product.eyebrow }}</p>
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.summary }}</p>
+            <ul>
+              <li v-for="benefit in product.benefits" :key="benefit">
+                <i class="fas fa-check"></i>{{ benefit }}
+              </li>
+            </ul>
+            <NuxtLink :to="`/produtos/${product.slug}`" class="solution-link">
+              Ver produto <i class="fas fa-arrow-right"></i>
+            </NuxtLink>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final" id="contato">
+      <div class="cta-bg-pattern"></div>
+      <div class="container cta-content">
+        <p class="section-label reveal">Pronto para começar?</p>
+        <h2 class="cta-headline reveal">Se você já tentou aprender<br />e ainda sente que trava,</h2>
+        <p class="cta-sub reveal">
+          talvez não seja você.<br />
+          <strong>Talvez seja o método.</strong>
+        </p>
+        <div class="cta-actions reveal">
+          <a
+            href="https://wa.me/55041998023799?text=Quero%20come%C3%A7ar%20agora%20com%20a%20PRAGMA"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-large"
+          >
+            👉 Quero começar agora
+          </a>
+          <p class="cta-hint">Sem compromisso. Uma conversa, sem pressão.</p>
+        </div>
+
+        <div class="contact-options reveal">
+          <a href="https://wa.me/55041998023799" target="_blank" rel="noopener" class="contact-option">
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </a>
+          <a href="https://instagram.com/cacaupragma" target="_blank" rel="noopener" class="contact-option">
+            <i class="fab fa-instagram"></i><span>Instagram</span>
+          </a>
+          <a href="mailto:pragmaco.consultoria@gmail.com" class="contact-option">
+            <i class="fas fa-envelope"></i><span>E-mail</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">PRAGMA</a>
+        <p class="footer-tagline">Consultoria Linguística Premium</p>
+        <p class="footer-desc">Transformamos conhecimento em comunicação real — para profissionais que querem se posicionar com confiança no cenário global.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="#solucoes">Inglês para Carreira</a></li>
+          <li><a href="#solucoes">PRAGMA Fluency Path</a></li>
+          <li><a href="#solucoes">Espanhol para a Vida</a></li>
+          <li><a href="#metodo">Nosso Método</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/55041998023799" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://instagram.com/cacaupragma" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> @cacaupragma</a></li>
+          <li><a href="mailto:pragmaco.consultoria@gmail.com"><i class="fas fa-envelope"></i> pragmaco.consultoria@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#hero">Sobre a PRAGMA</a></li>
+          <li><NuxtLink to="/privacidade">Política de Privacidade</NuxtLink></li>
+          <li><a href="#contato">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 PRAGMA Consultoria Linguística. Todos os direitos reservados.</p>
+        <p class="footer-craft">Feito com propósito e precisão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/55041998023799?text=Ol%C3%A1!%20Tenho%20interesse%20na%20PRAGMA."
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-float"
+    aria-label="Fale no WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</template>
