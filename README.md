@@ -2,6 +2,15 @@
 
 Site de marketing institucional da PRAGMA, consultoria linguística premium que transforma conhecimento em comunicação real para profissionais do cenário global.
 
+## Stack atual
+
+- Nuxt 3 com geração estática para Netlify.
+- Gerenciador de pacotes: `pnpm`.
+- Comando de build: `pnpm generate`.
+- Diretório publicado no Netlify: `.output/public`.
+- Rotas principais: `/`, `/privacidade`, `/produtos` e `/produtos/:slug`.
+- Produtos e links de checkout Hotmart ficam em `data/products.ts`.
+
 ---
 
 ## 🎯 Objetivo do Site
