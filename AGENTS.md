@@ -3,7 +3,7 @@
 ## Project Shape
 - This is now a Nuxt 3 static site generated for Netlify; use pnpm, run `pnpm generate`, and publish `.output/public`.
 - Current routes are `/`, `/privacidade`, `/produtos`, and `/produtos/:slug`.
-- The landing and privacy pages still import legacy root HTML (`index.html`, `privacidade.html`) as raw content during the first migration phase.
+- The landing and privacy pages still import legacy HTML from `legacy/` as raw content during the first migration phase.
 - Shared styling still lives in `css/style.css`; client-only behavior is in `plugins/site-interactions.client.ts`.
 
 ## Local Verification

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import legacyHtml from '../index.html?raw'
+import legacyHtml from '../legacy/index.html?raw'
 import { products } from '../data/products'
 
 const productCards = products.map(product => `

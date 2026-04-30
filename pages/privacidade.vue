@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import legacyHtml from '../privacidade.html?raw'
+import legacyHtml from '../legacy/privacidade.html?raw'
 
 const pageHtml = legacyHtml
   .match(/<body[^>]*>([\s\S]*)<\/body>/)?.[1]
